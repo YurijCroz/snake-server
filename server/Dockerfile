@@ -19,4 +19,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD sequelize db:migrate && npm server
+CMD sequelize db:migrate && npm start

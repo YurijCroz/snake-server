@@ -4,6 +4,9 @@
 ## Run application in DEV mode ##
 #################################
 
+# Stop PostgreSQL service
+sudo systemctl stop postgresql
+
 started_at=$(date +"%s")
 
 echo "-----> Provisioning containers"
