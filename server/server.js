@@ -8,10 +8,10 @@ const options = {
   cert: fs.readFileSync("../cert.pem"),
 };
 
-const PORT = 3000;
+const PORT = 443;
 
 const server = https.createServer(options, app);
 
-server.listen(/* PORT,  */() => {
+server.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
 });
