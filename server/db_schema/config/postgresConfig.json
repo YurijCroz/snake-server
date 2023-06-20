@@ -1,25 +1,27 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "password",
-    "database": "snake_eater",
-    "host": "db-dev",
+    "username": "snake_db_4gxa_user",
+    "password": "3P8akhgfd6DRmgWsi2CBp2j9870Fauo9",
+    "database": "snake_db_4gxa",
+    "host": "dpg-ci8qe3unqql0lddiet1g-a",
     "dialect": "postgres",
     "operatorsAliases": "Op",
     "seederStorage": "sequelize"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "snake_eater",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "snake_db_4gxa_user",
+    "password": "3P8akhgfd6DRmgWsi2CBp2j9870Fauo9",
+    "database": "snake_db_4gxa",
+    "host": "dpg-ci8qe3unqql0lddiet1g-a",
+    "dialect": "postgres",
+    "operatorsAliases": "Op",
+    "seederStorage": "sequelize"
   },
   "production": {
-    "username": "postgres",
-    "password": "password",
-    "database": "snake_eater",
-    "host": "db-prod",
+    "username": "snake_db_4gxa_user",
+    "password": "3P8akhgfd6DRmgWsi2CBp2j9870Fauo9",
+    "database": "snake_db_4gxa",
+    "host": "dpg-ci8qe3unqql0lddiet1g-a",
     "dialect": "postgres",
     "operatorsAliases": "Op",
     "seederStorage": "sequelize"
