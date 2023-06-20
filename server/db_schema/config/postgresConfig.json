@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "password",
+    "database": "snake_eater",
+    "host": "db-dev",
+    "dialect": "postgres",
+    "operatorsAliases": "Op",
+    "seederStorage": "sequelize"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "snake_eater",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "password",
+    "database": "snake_eater",
+    "host": "db-prod",
+    "dialect": "postgres",
+    "operatorsAliases": "Op",
+    "seederStorage": "sequelize"
+  }
+}

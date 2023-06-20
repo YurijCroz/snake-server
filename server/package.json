@@ -1,0 +1,24 @@
+{
+  "name": "snake_eater_server",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./server.js",
+    "server": "node ./server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "http-errors": "~1.8.0",
+    "lodash": "^4.17.21",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  }
+}
