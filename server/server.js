@@ -2,13 +2,17 @@
 const https = require("https");
 const app = require("./app.js");
 const fs = require("fs");
+const path = require("path");
+
+const keyPem = path.resolve(__dirname, "../key.pem");
+const certPem = path.resolve(__dirname, "../cert.pem");
 
 const options = {
-  key: fs.readFileSync("../key.pem"),
-  cert: fs.readFileSync("../cert.pem"),
+  key: fs.readFileSync(keyPem),
+  cert: fs.readFileSync(certPem),
 };
 
-const PORT = 443;
+const PORT = 3000;
 
 const server = https.createServer(options, app);
 
