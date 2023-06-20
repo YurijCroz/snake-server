@@ -12,7 +12,7 @@ const options = {
   cert: fs.readFileSync(certPem),
 };
 
-const PORT = 3000;
+const PORT = 443;
 
 const server = https.createServer(options, app);
 
