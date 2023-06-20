@@ -1,7 +1,7 @@
 "use strict";
 const https = require("https");
 const app = require("./app.js");
-const { User } = require("../db_schema/models");
+const { User } = require("./db_schema/models");
 
 const PORT = 3000;
 
@@ -17,7 +17,7 @@ const test = async () => {
     });
     console.log(topPlayers);
   } catch (error) {
-    console.log("ERROR >>>>")
+    console.log("ERROR >>>>");
     console.log(error);
   }
 };
