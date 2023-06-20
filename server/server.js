@@ -1,28 +1,17 @@
 "use strict";
 const https = require("https");
 const app = require("./app.js");
-const { User } = require("./db_schema/models");
+const fs = require("fs");
+
+const options = {
+  key: fs.readFileSync("../key.pem"),
+  cert: fs.readFileSync("../cert.pem"),
+};
 
 const PORT = 3000;
 
-const server = https.createServer(app);
-
-const test = async () => {
-  try {
-    const topPlayers = await User.findAll({
-      attributes: ["userId", "nickName", "score", "createdAt"],
-      order: [["score", "DESC"]],
-      limit: 10,
-      offset: 0,
-    });
-    console.log(topPlayers);
-  } catch (error) {
-    console.log("ERROR >>>>");
-    console.log(error);
-  }
-};
+const server = https.createServer(options, app);
 
 server.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
-  test();
 });
