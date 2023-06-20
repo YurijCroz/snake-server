@@ -3,6 +3,7 @@ const { User } = require("../db_schema/models");
 
 module.exports.getTopPlayers = async (req, res, next) => {
   try {
+    console.log("req ok")
     const topPlayers = await User.findAll({
       attributes: ["userId", "nickName", "score", "createdAt"],
       order: [["score", "DESC"]],
